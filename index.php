@@ -12,7 +12,7 @@
   
   <nav class="navbar">
     <div class="container">
-      <a href="index.php?page=main" class="navbar-brand">Dolno Śląsk</a>
+      <a href="index.php?page=main" class="navbar-brand">Dolny Śląsk</a>
 
       <div class="navbar-wrap">
         <ul class="navbar-menu">
