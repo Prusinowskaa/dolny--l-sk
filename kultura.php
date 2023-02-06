@@ -73,20 +73,13 @@
 		</ul> 
 	</nav> 
 	<main> 
-		<section id="atrakcje"> 
+		<section id="kultura"> 
 			<h2>Dolny Śląsk</h2> 
 			 
-					<h3>Strona główna</h3>  
-					<p>Dolny Śląsk – Nie do opowiedzenia. Do zobaczenia. Znajdź informacje o tym co zwiedzić, co robić i gdzie się zatrzymać na Dolnym Śląsku.</p> 
-				 
-				
-                <p>  Niezależnie od tego, czy preferujesz spokojne spacery nad brzegiem rzeki, </p> 
-                    <p>czy może wolisz wędrówki górskimi szlakami, podróżowanie i zwiedzanie na dwóch kółkach, </p> 
-                        <p>jazdę na nartach zjazdowych lub biegowych, z całą pewnością na Dolnym Śląsku znajdziesz coś dla siebie. </p> 
-                            <p>Doświadczać regionu możesz nie tylko z poziomu ziemi, ale także wody i powietrza, korzystając ze świetnych warunków do spływów kajakiem, lotów szybowcem i paralotnią.</h3></p>
-				<p>
-                    <p>
-                        <img src="rower.jpg"> <img src="narty.jpg"> <img src="pieszo.jpg"> 
+					<h3>Kultura</h3>  
+                    <p>Dolny Śląsk był przez większą część swoich dziejów prawdziwym kulturowym tyglem. To właśnie tej charakterystycznej mieszance region zawdzięcza bogactwo i rangę znajdujących się na jego terenie zabytków.
+					<p> Historia od wieków rodziła się na Dolnym Śląsku na styku wielu kultur – nim region przeszedł z końcem X wieku pod panowanie Mieszka I, rządzili nim najprawdopodobniej władcy czescy. W późniejszych okresach wchodził on w skład ziem podległych książętom i królom polskim, a potem również władcom czeskim, austriackim, pruskim, niemieckim, by od 1945 roku stać się jednym z ważniejszych terytoriów odbudowywanego po II wojnie światowej państwa polskiego. Zamieszkiwany przez mieszkańców różniących się narodowością, wiarą, poglądami, i wreszcie językiem, w jakim były one wyrażane.
+                    <img src="zamek.jpg"> <img src="wystawa.jpg"> <img src="dfe.jpg">  <img src="kultura.jpg">
 
 				
 					
