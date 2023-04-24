@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dolny Śląsk</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Dolny Śląsk</h1>
+		<nav>
+      <ul class="menu">
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="#">O nas</a>
+          <ul class="submenu">
+            <li><a href="#">Nasza historia</a></li>
+            <li><a href="#">Nasz zespół</a></li>
+            <li><a href="#">Nasze cele</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Oferta</a>
+          <ul class="submenu">
+            <li><a href="#">Produkty</a></li>
+            <li><a href="#">Usługi</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+    
+	</header>
+
+	<main>
+		<section id="history">
+      <h2>Historia Dolnego Śląska</h2>
+      <p>Dolny Śląsk to kraina o bogatej historii, której ślady można zobaczyć w wielu miejscach. Jednym z najważniejszych miast regionu jest Wrocław, którego historia sięga czasów panowania Piastów.</p>
+      <div class="more-content" style="display: none;">
+          <p>Dolny Śląsk jest znany przede wszystkim ze swych zamków i pałaców, które przyciągają turystów z całego świata. Wśród nich warto wymienić zamek Książ, zamek Czocha czy pałac w Karpnikach.</p>
+      </div>
+      <button id="show-more-btn">Pokaż więcej</button>
+  </section>
+  
+  <script>
+      const moreContent = document.querySelector('.more-content');
+      const showMoreBtn = document.querySelector('#show-more-btn');
+  
+      showMoreBtn.addEventListener('click', function() {
+          if (moreContent.style.display === 'none') {
+              moreContent.style.display = 'block';
+              showMoreBtn.textContent = 'Pokaż mniej';
+          } else {
+              moreContent.style.display = 'none';
+              showMoreBtn.textContent = 'Pokaż więcej';
+          }
+      });
+  </script>
+
+<section id="kul">
+  <h2>Kultura Dolnego Śląska</h2>
+  <p>Kultura Dolnego Śląska to nie tylko tradycyjne tańce i pieśni ludowe, ale również bogata sztuka, literatura i teatr. Wrocław słynie z Festiwalu Teatru Polskiego oraz Międzynarodowego Festiwalu Filmowego.</p>
+  <button id="show-more-btn">Pokaż więcej</button>
+</section>
+
+<script>
+    const moreContent = document.querySelector('.more-content');
+    const showMoreBtn = document.querySelector('#show-more-btn');
+
+    showMoreBtn.addEventListener('click', function() {
+        if (moreContent.style.display === 'none') {
+            moreContent.style.display = 'block';
+            showMoreBtn.textContent = 'Pokaż mniej';
+        } else {
+            moreContent.style.display = 'none';
+            showMoreBtn.textContent = 'Pokaż więcej';
+        }
+    });
+</script>
+  <div id="kultura-more" style="display: none;">
+      <p>Kultura Dolnego Śląska ma wielowiekową tradycję i obejmuje wiele dziedzin sztuki. W regionie można znaleźć wiele cennych zabytków, takich jak katedra wrocławska czy zamek Książ. Wrocław jest również centrum życia kulturalnego, gdzie odbywają się liczne festiwale i imprezy artystyczne.</p>
+      
+  </div>
+</section>
+----------------------------------------------
+<section id="tur">
+  <h2>Turystyka w Dolnym Śląsku</h2>
+  <p>Dolny Śląsk to region, który przyciąga turystów swoimi malowniczymi krajobrazami, zabytkami i bogatą kulturą. Wiele miejsc na Dolnym Śląsku jest wpisanych na Listę Światowego Dziedzictwa UNESCO, co świadczy o ich wyjątkowości.</p>
+  <button id="show-more-btn">Pokaż więcej</button>
+  <div id="tur-more" class="more-content" style="display: none;">
+      <p>W Dolnym Śląsku warto zobaczyć m.in. Sudecką Kolejkę Leśną, Karkonosze, Góry Stołowe czy Zamek Książ. Region słynie również z licznych szlaków turystycznych, które umożliwiają aktywny wypoczynek w pięknej scenerii.</p>  
+  </div>
+</section>
+
+<script>
+    const moreContent = document.querySelector('#tur-more');
+    const showMoreBtn = document.querySelector('#show-more-btn');
+
+    showMoreBtn.addEventListener('click', function() {
+        if (moreContent.style.display === 'none') {
+            moreContent.style.display = 'block';
+            showMoreBtn.textContent = 'Pokaż mniej';
+        } else {
+            moreContent.style.display = 'none';
+            showMoreBtn.textContent = 'Pokaż więcej';
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+		<section>
+			<title>Galeria zdjęć Dolnego Śląska</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.gallery {
+			width: 100%;
+			height: 400px;
+			background-image: url(https://foto.reklama.wroc.pl/wp-content/gallery/dolny-slask-drewniane-koscioly/DSC_2435.jpg);
+			background-size: cover;
+			background-position: center;
+			position: relative;
+			overflow: hidden;
+		}
+		.gallery img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 400px;
+			object-fit: cover;
+			object-position: center;
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		.gallery img.active {
+			opacity: 1;
+		}
+		.gallery nav {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1;
+		}
+		.gallery nav button {
+			background-color: transparent;
+			border: none;
+			color: white;
+			font-size: 1.5rem;
+			margin: 0 10px;
+			cursor: pointer;
+			transition: transform 0.2s ease-in-out;
+		}
+		.gallery nav button:hover {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+	<div class="gallery">
+		<img src="https://foto.reklama.wroc.pl/wp-content/gallery/dolny-slask-drewniane-koscioly/DSC_2435.jpg" class="active">
+		<img src="https://foto.reklama.wroc.pl/wp-content/gallery/dolny-slask-drewniane-koscioly/DSC_0499.jpg">
+		<img src="https://foto.reklama.wroc.pl/wp-content/gallery/dolny-slask-drewniane-koscioly/DSC_7963.jpg">
+		<img src="https://foto.reklama.wroc.pl/wp-content/gallery/dolny-slask-drewniane-koscioly/DSC_9526.jpg">
+		<nav>
+			<button id="prev"><</button>
+			<button id="next">></button>
+		</nav>
+	</div>
+	<script>
+		const images = document.querySelectorAll('.gallery img');
+		const prevBtn = document.querySelector('#prev');
+		const nextBtn = document.querySelector('#next');
+		let index = 0;
+
+		function changeImage() {
+			images.forEach(image => image.classList.remove('active'));
+			images[index].classList.add('active');
+		}
+
+		function nextImage() {
+			index++;
+			if (index >= images.length) {
+				index = 0;
+			}
+			changeImage();
+		}
+
+		function prevImage() {
+			index--;
+			if (index < 0) {
+				index = images.length - 1;
+			}
+			changeImage();
+		}
+
+		nextBtn.addEventListener('click', nextImage);
+		prevBtn.addEventListener('click', prevImage);
+	</script>
+		</section>
+	</main>
+
+	<footer>
+		<p>Strona o Dolnym Śląsku</p>
+	</footer>
+
+</body>
+</html>
